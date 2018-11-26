@@ -1,0 +1,26 @@
+form {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+img{
+    object-fit: contain;
+    min-width: 100px;
+    max-height: 50vh;
+    min-height: 100px;
+    max-width: 75vw;
+    margin: auto;
+}
+
+label[for] {
+    cursor: pointer;
+}
+
+[name="file"] {
+    display: block;
+    overflow: hidden;
+    appearance: none;
+    width: 0;
+    height: 0;
+}

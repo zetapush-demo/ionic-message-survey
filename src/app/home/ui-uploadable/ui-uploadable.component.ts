@@ -14,44 +14,8 @@ const DEFAULT_BASE64_SRC =
 
 @Component({
   selector: 'app-ui-uploadable',
-  template: `
-    <form #form name="app-ui-uploadable-form">
-      <input [attr.id]="id" type="file" name="file" (change)="onChange($event)" [attr.accept]="accept" [attr.multiple]="multiple" />
-      <label [attr.for]="id">
-        <img [src]="src"/>
-      </label>
-    </form>
-  `,
-  styles: [
-    `
-    :host {
-
-    }
-    form {
-      display: flex;
-      height: 100%;
-      width: 100%;
-    }
-    img{
-      object-fit: contain;
-      min-width: 100px;
-      max-height: 50vh;
-      min-height: 100px;
-      max-width: 75vw;
-      margin: auto;
-    }
-    label[for] {
-      cursor: pointer;
-    }
-    [name="file"] {
-      display: block;
-      overflow: hidden;
-      appearance: none;
-      width: 0;
-      height: 0;
-    }
-  `,
-  ],
+  templateUrl: './ui-uploadable.component.html',
+  styleUrls: ['./ui-uploadable.component.scss'],
 })
 export class UiUploadableComponent implements OnChanges {
   protected static id = 0;

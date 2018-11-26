@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
-import { AvatarComponent } from './avatar/avatar.component';
 import { UiUploadableComponent } from './ui-uploadable/ui-uploadable.component';
 
 @NgModule({
@@ -14,6 +13,6 @@ import { UiUploadableComponent } from './ui-uploadable/ui-uploadable.component';
     FormsModule,
     RouterModule.forChild([{ path: '', component: HomePage }])
   ],
-  declarations: [HomePage, AvatarComponent, UiUploadableComponent]
+  declarations: [HomePage, UiUploadableComponent]
 })
 export class HomePageModule {}

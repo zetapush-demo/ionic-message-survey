@@ -1,5 +1,7 @@
 # ionic-message-survey
 
+Ionic application that uses ZetaPush Celtia to create a survey and send messages to users.
+
 ## Installation
 
 ```console

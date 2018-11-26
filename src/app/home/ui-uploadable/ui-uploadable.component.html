@@ -1,0 +1,6 @@
+<form #form name="app-ui-uploadable-form">
+    <input [attr.id]="id" type="file" name="file" (change)="onChange($event)" [attr.accept]="accept" [attr.multiple]="multiple" />
+    <label [attr.for]="id">
+        <img [src]="src"/>
+    </label>
+</form>
